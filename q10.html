@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question10</title>
+    <style>
+        .form{
+            border: 5px solid rgb(10, 1, 1);
+            position: relative;
+            width: fit-content;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        input[type=text],select{
+            font-size: 19px;
+            font-weight: 700;
+            border: 3px solid rgb(4, 2, 12);
+            /* margin-right: 59px; */
+            border-radius: 10px;
+            background-color: rgb(63, 230, 12);
+            height: 30px;
+            overflow-x:hidden;
+          
+          
+
+        }
+        #fn:hover{
+            background-color: dodgerblue;
+
+        }
+       
+        .div1{
+            display: inline-block;
+        }
+        select{
+            width: 150px;
+            text-align: center;
+        }
+        input[type=submit]{
+            font-size: 25px;
+            font-weight: 700;
+            border: 3px solid rgb(5, 1, 8);
+            /* margin-right: 59px; */
+            width: 80%;
+            background-color: rgb(151, 121, 12);
+            border-radius: 10px;
+            height: 40px;
+            margin: auto;
+            margin-left: 30px;
+            margin-top: 40px;
+          
+
+        }
+        input[type=submit]:hover{
+           
+            background-color: rgb(248, 7, 103);
+            transition: 1s all ease-in-out;
+            
+
+        }
+        h3{
+          color: rgb(243, 240, 240);
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 20px;
+        }
+        h1{
+            background-color: cyan;
+            border: 4px solid black;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .img{
+            /* border: 4px solid rgb(50, 182, 14); */
+            width: fit-content;
+            margin: auto;
+           
+           
+
+        }
+        .topic{
+            /* border: 4px solid rgb(101, 182, 14); */
+
+        }
+        .topic p{
+            text-align: center;
+            font-size: 30px;
+            color: red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0;
+        }
+        .img h2{
+            text-align: center;
+           
+         
+         
+
+       }
+        img{
+            border-radius: 25px;
+            /* border: 4px solid rgb(182, 14, 14); */
+           width: 80px;
+           height: 80px;
+            margin: auto;
+
+            
+        }
+        .heading{
+            border: 4px solid rgb(244, 7, 7);
+            width: 30%;
+            margin: auto;
+            border-radius: 25px;
+            background-color: black;
+            padding: 40px;
+            
+        }
+        #gender{
+            font-size: 20px;
+            color: chartreuse;
+        }
+        .ma{
+            color: white;
+            font-size: 17px;
+        }
+        input[type=password]{
+            font-size: 19px;
+            font-weight: 700;
+            border: 3px solid rgb(4, 2, 12);
+            margin-right: 59px;
+            border-radius: 10px;
+            background-color: rgb(230, 190, 12);
+            height: 30px;
+        }
+        #fn2{
+            width: 243px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="topic">
+            <div class="img">
+                <img src="SOA-Logo.webp" alt="leopard" >
+            </div>
+            <p>Registration</p>
+            
+        </div>
+        <form action="form.php">
+
+            <div class="div1">
+                <label for="Name" ><h3>User Name :--</h3></label>
+               <input type="text" placeholder="Enter usernamne" id="fn">
+
+            </div>
+            
+                
+            <div>
+                <label for="email" ><h3>Email :--</h3></label>
+               <input type="text" placeholder="Enter email" id="fn">
+
+            </div>
+
+            <div>
+                <label for="mobile" ><h3>Mobile :--</h3></label>
+               <input type="text" placeholder="Enter number" id="fn2">
+
+            </div>
+            <div>
+                <label for="gender" id="gender">Gender</label>
+                <input type="radio" id="male1" name="gender" >
+                  <label for="male" class="ma">Male</label>
+                  <input type="radio" id="female1" name="gender" >
+                  <label for="female" class="ma">Female</label><br>
+            </div>
+
+
+
+
+            <label for="branch"><h3>Select City</h3></label>
+            <select name="branch" id="branch-name">
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Baripada">Baripada</option>
+                <option value="Balasore">Balasore</option>
+                <option value="Cuttack">Cuttack</option>
+                <option value="Rourkela">Rourkela</option>
+                <option value="Bhadrak">Bhadrak</option>
+                <option value="khordha">khordha</option>
+
+            </select><BR></BR>
+            <div>
+                <label for="Name" ><h3>Password :--</h3></label>
+               <input type="password" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  id="fn2" required>
+
+            </div>
+            <input type="submit" value="SUBMIT">
+            
+                
+            
+        </form>
+        <!-- <div class="form"> -->
+            
+
+                
+                
+        <!-- </div> -->
+    </div>
+    
+</body>
+</html>

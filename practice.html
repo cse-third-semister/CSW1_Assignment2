@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text] , select{
+            display: block;
+            width: 100%;
+            display: inline-block;
+        }
+
+        
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form action="form.php/">
+            <label for="Name">Student Name</label>
+                <input type="text" id="name" name="name" placeholder="Write your name">
+            
+            <label for="department">Dept</label>
+                <input type="text" id="dept" name="dept" placeholder="Write your dept.">
+
+            
+            <label for="city">Choose city</label>
+                <select name="city" id="city">
+                    <option value="bbsr">bbsr</option>
+                    <option value="ctc">ctc</option>
+                    <option value="bls">bls</option>
+                </select>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">female</label>
+
+                <input type="checkbox" id="hello">
+                <label for="subscribe">subscribe</label><br>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            
+            
+            <input type="submit" value="submit">
+        </form>
+    </div>
+   
+  
+    
+</body>
+</html>
